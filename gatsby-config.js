@@ -10,11 +10,19 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "production"}`,
 })
+const {
+  NODE_ENV,
+  SITE_URL,
+  URL: NETLIFY_SITE_URL = SITE_URL,
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env
+
 module.exports = {
   siteMetadata: {
     title: `NOMBRES EN LETTRES`,
-    description: `chiffes et nombres en lettres `,
-    siteUrl: `http://www.nombres-chiffres-en-lettres.com/`,
+    description: `Ecrire chiffes ou nombres en lettres `,
+    siteUrl: `https://www.nombres-chiffres-en-lettres.com/`,
   },
   partytownProxiedURLs: [
     `https://www.googletagmanager.com/gtag/js?id=${process.env.GATSBY_GA_MEASUREMENT_ID}`,
@@ -57,6 +65,61 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+         allSitePage {
+          nodes {
+            path
+          }
+        }
+        
+      }
+      `,
+        resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
+          return allPages.map(page => {
+            return { ...page }
+          })
+        },
+
+        serialize: ({ path, modifiedGmt }) => {
+          return {
+            url: path,
+            lastmod: modifiedGmt,
+          }
+        },
+        excludes: ["/legal/*"],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: `*` }],
+          },
+          "branch-deploy": {
+            policy: [{ userAgent: `*`, disallow: [`/`] }],
+            sitemap: null,
+            host: null,
+          },
+          "deploy-preview": {
+            policy: [{ userAgent: `*`, disallow: [`/`] }],
+            sitemap: null,
+            host: null,
+          },
+        },
       },
     },
   ],

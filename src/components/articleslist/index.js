@@ -12,7 +12,7 @@ const ArticlesList = () => {
           sx={{
             textTransform: "none",
             color: "inherit",
-            fontSize: "1.2rem",
+            fontSize: "1rem",
             fontWeight: "600",
           }}
           key={i}

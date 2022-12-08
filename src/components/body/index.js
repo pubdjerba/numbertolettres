@@ -14,10 +14,6 @@ const PageBody = () => {
           <StaticImage src="../../images/team.svg" alt="chiffre en lettres" />
         </Grid>
         <Grid item md={4}>
-          <Stack direction="column" alignItems="flex-start" marginBottom={2}>
-            <ArticlesList />
-          </Stack>
-
           <Stack direction="column" alignItems="flex-start">
             <Typography
               sx={{ padding: "0.5rem", fontSize: "1rem", fontWeight: "600" }}
@@ -37,6 +33,9 @@ const PageBody = () => {
                 {`Comment écrire ${number} en lettres ?`}
               </Button>
             ))}
+          </Stack>
+          <Stack direction="column" alignItems="flex-start" marginY={2}>
+            <ArticlesList />
           </Stack>
         </Grid>
       </Grid>
