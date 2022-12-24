@@ -22,7 +22,7 @@ module.exports = {
   siteMetadata: {
     title: `NOMBRES EN LETTRES`,
     description: `Ecrire chiffes ou nombres en lettres `,
-    siteUrl: `https://www.nombres-chiffres-en-lettres.com/`,
+    siteUrl: `https://www.en-lettres.com/`,
   },
   partytownProxiedURLs: [
     `https://www.googletagmanager.com/gtag/js?id=${process.env.GATSBY_GA_MEASUREMENT_ID}`,
