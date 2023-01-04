@@ -1,0 +1,31 @@
+---
+slug: "recommandations"
+title: "Recommandations de l'Académie française de 1990"
+---
+
+# Recommandations de l'Académie française concernant l'orthographe des nombres
+
+1. Les nombres cardinaux (qui indiquent une quantité) sont écrits en lettres lorsqu'ils sont inférieurs à vingt, et en chiffres lorsqu'ils sont supérieurs à vingt :
+  - un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix, onze, douze, treize, quatorze, quinze, seize, dix-sept, dix-huit, dix-neuf, vingt, vingt-et-un, vingt-deux, etc.
+
+2. Les nombres ordinaux (qui indiquent un rang dans une suite) sont écrits en lettres lorsqu'ils sont inférieurs à quinze, et en chiffres lorsqu'ils sont supérieurs à quinze :
+  - premier, deuxième, troisième, quatrième, cinquième, sixième, septième, huitième, neuvième, dixième, onzième, douzième, treizième, quatorzième, quinzième, seizeième, dix-septième, dix-huitième, dix-neuvième, vingtième, vingt et unième, vingt-deuxième, etc.
+
+3. Les nombres décimaux sont écrits en chiffres, avec un point pour la virgule :
+  - 0,5 (zéro virgule cinq)
+  - 3,14 (trois virgule quatorze)
+
+4. Les nombres avec des milliers sont écrits en chiffres, avec un espace pour séparer les milliers :
+  - 1 000 (un mille)
+  - 5 000 000 (cinq millions)
+
+5. Pour écrire les nombres supérieurs à un million, on peut utiliser la notation "un million" ou "un milliard", etc., suivi du nombre en chiffres :
+  - 1 000 000 (un million)
+  - 1 000 000 000 (un milliard)
+
+6. Pour écrire les nombres avec des centaines de milliers, on peut utiliser la notation "cent mille" ou "deux cent mille", etc., suivi du nombre en chiffres :
+  - 100 000 (cent mille)
+  - 200 000 (deux cent mille)
+
+7. Pour écrire les nombres avec des dizaines de milliers, on peut utiliser la notation "dix mille" ou "vingt mille", etc., suivi du nombre en chiffres :
+  - 10 000 (dix mille)
