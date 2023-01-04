@@ -25,7 +25,7 @@ module.exports = {
     siteUrl: `https://www.en-lettres.com/`,
   },
   partytownProxiedURLs: [
-    `https://www.googletagmanager.com/gtag/js?id=${process.env.GATSBY_GA_MEASUREMENT_ID}`,
+    `https://www.googletagmanager.com/gtag/js?id=G-5KYV7PWXJT`,
   ],
   plugins: [
     `gatsby-plugin-image`,
