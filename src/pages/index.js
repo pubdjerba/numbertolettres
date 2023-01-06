@@ -14,6 +14,11 @@ const IndexPage = () => (
   </>
 )
 
-export const Head = () => <Seo title="chiffres en lettres" />
+export const Head = () =>(
+<>
+ <Seo title="chiffres en lettres" />
+ <meta name="google-site-verification" content="pgYXcrzf6ujhco4V890jRCosFYC_-78azGh7fvH-1Sk" />
+</>
+ )
 
 export default IndexPage
